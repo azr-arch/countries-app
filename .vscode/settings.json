@@ -1,0 +1,6 @@
+{
+    "git.enabled": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
+}
