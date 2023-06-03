@@ -195,6 +195,7 @@ header {
 .country-hero--left-content,
 .country-hero--right-content {
     width: 50%;
+    min-width: 300px;
 }
 
 .country-hero--left-content img {
@@ -273,6 +274,11 @@ header {
 
 
 /* THEME SWITCh TOGGLE */
+.header--theme-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .toggle-btn {
     height:25px;
     width: 50px;
@@ -399,13 +405,86 @@ header {
     font-size: .9em;
 }
 
-/* .css-1dimb5e-singleValue  {
-    font-size: 5em;
-    color: white;
-} */
-
 /* ERROR FOR NOT FOUND */
 .error {
     color: var(--text);
+}
+
+
+
+@media (max-width:1150px) {
+    .wrapper {
+        gap: 2em;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .country-hero--left-content {
+        height: fit-content;
+        
+    }
+    .country-hero--left-content img {
+        object-fit: contain;
+    }
+    .country-hero--right-content {
+        gap: 1em;
+    }
+    .content-wrp {
+        column-gap: 2em;
+    }
+}
+
+@media (max-width:940px){
+    .back-btn {
+        font-size: .9em;
+    }
+    .country-hero--right-content .country-name {
+        font-size: 1em;
+    }
+    .country-about {
+        font-size: .6em;
+    }
+    .borders {
+        font-size: .9em;
+    }
+    .border-item {
+        font-size: .7em;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+    .country-hero {
+        padding: 3em;
+        gap: 3em;
+    }
+}
+
+@media (max-width:550px) {
+    .header--logo {
+        font-size: 1.5em;
+    }
+    
+}
+
+@media (max-width:450px) {
+    :root {
+        --side-p: 2em
+    }
+
+    .header--logo {
+        font-size: 1.2em;
+    }
+
+    .toggle-btn {
+        height: 20px;
+        width: 40px;
+    }
+
+    .circle {
+        width: 20px;
+        background-size:  18px;
+    }
+
 }
 
